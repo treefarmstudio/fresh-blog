@@ -14,6 +14,7 @@ export default function App({ Component }: AppProps) {
     <>
       <Head>
         <title>{site.title}</title>
+        <meta name="description" content={site.description} />
         <meta name="theme-color" content="#000" />
         <style>
           {CSS}
