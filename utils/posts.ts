@@ -1,17 +1,16 @@
 import { extract } from "$std/encoding/front_matter.ts";
 
 export interface Post {
-  id: string;
+  slug: string;
   title: string;
-  publishAt: Date;
-  snippet: string;
+  publishedAt: Date;
   content: string;
 }
 
-export async function loadPost(id: string): Promise<Post | null> {
+export async function loadPost(slug: string): Promise<Post | null> {
   let text: string;
   try {
-    text = await Deno.readTextFile(`./data/posts/${id}.md`);
+    text = await Deno.readTextFile(`./data/posts/${slug}.md`);
   } catch (err) {
     if (err instanceof Deno.errors.NotFound) {
       return null;
@@ -20,12 +19,11 @@ export async function loadPost(id: string): Promise<Post | null> {
   }
   const { attrs, body } = extract(text);
   const params = attrs as Record<string, string>;
-  const publishAt = new Date(params.publish_at);
+  const publishedAt = new Date(params.published_at);
   return {
-    id,
+    slug,
     title: params.title,
-    publishAt,
-    snippet: params.snippet,
+    publishedAt,
     content: body,
   };
 }
@@ -33,10 +31,10 @@ export async function loadPost(id: string): Promise<Post | null> {
 export async function listPosts(): Promise<Post[]> {
   const promises = [];
   for await (const entry of Deno.readDir("./data/posts")) {
-    const id = entry.name.replace(".md", "");
-    promises.push(loadPost(id));
+    const slug = entry.name.replace(".md", "");
+    promises.push(loadPost(slug));
   }
   const posts = await Promise.all(promises) as Post[];
-  posts.sort((a, b) => b.publishAt.getTime() - a.publishAt.getTime());
+  posts.sort((a, b) => b.publishedAt.getTime() - a.publishedAt.getTime());
   return posts;
 }
