@@ -1,6 +1,6 @@
 ---
-title: Why you should use Fresh on your next project
-published_at: 2022-07-04T13:49:37.703Z
+title: Create a Deno Deploy Button
+published_at: 2022-09-01T13:49:37.703Z
 ---
 
 # h1 Heading

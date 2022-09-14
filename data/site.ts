@@ -1,10 +1,11 @@
 export const site = {
   title: 'Fresh Blog',
   description: 'A blog built with Fresh',
-  copyrightName: 'Little Sticks',
+  copyrightName: 'Fresh Blog',
 }
 
 export const settings = {
-  showLittleSticksBadge: true,
+  
+  showLittleSticksPlug: true,
 }
 
