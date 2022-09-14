@@ -1,6 +1,6 @@
 ---
 title: Create a Deno Deploy Button
-published_at: 2022-09-01T13:49:37.703Z
+published_at: 2022-09-24
 ---
 
 # h1 Heading

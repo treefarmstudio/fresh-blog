@@ -1,6 +1,6 @@
 ---
 title: How to deploy your blog to Deno Deploy
-published_at: 2022-06-26T13:49:37.703Z
+published_at: 2022-09-24
 ---
 
 # h1 Heading

@@ -2,6 +2,7 @@ import { Handlers, PageProps } from "$fresh/server.ts";
 import * as gfm from "$gfm";
 import { Container } from "../../components/Container.tsx";
 import { loadPost, Post } from "../../utils/posts.ts";
+import {Header} from "../../components/Header.tsx";
 
 interface Data {
   post: Post;
@@ -22,16 +23,22 @@ export default function PostPage(props: PageProps<Data>) {
   const html = gfm.render(post.content);
   return (
     <>
-    <header></header>
-    <Container>
-      <p class="text-gray-600 mt-12">{post.publishedAt}</p>
-      <h1 class="font-bold text-5xl mt-2">{post.title}</h1>
-      <style dangerouslySetInnerHTML={{ __html: gfm.CSS }} />
-      <div
-        class="mt-12 markdown-body"
-        dangerouslySetInnerHTML={{ __html: html }}
-      />
-    </Container>
+      <Header/>
+      <Container>
+        <h1 class="font-bold text-5xl pt-20">{post.title}</h1>
+        <time class="inline-block mt-4">
+          {new Date(post.publishedAt).toLocaleDateString("en-us", {
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+          })}
+        </time>
+        <style dangerouslySetInnerHTML={{ __html: gfm.CSS }} />
+        <article
+          class="mt-12 markdown-body"
+          dangerouslySetInnerHTML={{ __html: html }}
+        />
+      </Container>
     </>
   );
 }

@@ -1,6 +1,6 @@
 ---
 title: Why you should use Fresh on your next project
-published_at: 2022-07-04T13:49:37.703Z
+published_at: 2022-09-24
 ---
 
 # h1 Heading
