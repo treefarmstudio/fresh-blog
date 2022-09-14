@@ -6,13 +6,15 @@ This is a minimal blog template using the awesome framework [Fresh](https://fres
 
 ## Usage
 
-Start the project:
+### Start the project:
 
 ```
 deno task start
 ```
 
 This will watch the project directory and restart as necessary.
+
+### Making it your own
 
 To update the global site title, description, etc. edit the `data/site.ts` file.
 
