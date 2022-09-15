@@ -6,7 +6,7 @@ export function Footer(){
       <Container>
       <div class="text-center">
         <p>
-          &copy; {new Date().getFullYear()} {site.copyrightName} • <a class="hover:text-underline" href="https://github.com/littlesticks/fresh-blog">View Source</a>
+          &copy; {new Date().getFullYear()} {site.copyrightName} • <a class="hover:text-underline" href={site.viewSourceUrl}>View Source</a>
         </p>
       </div>
       {/* This is a plug for the creator of this template, you can delete the code or disable it in the site settings */}
