@@ -14,7 +14,7 @@ deno task start
 
 This will watch the project directory and restart as necessary.
 
-### Making it your own
+### Make it your own
 
 To update the global site title, description, etc. edit the `data/site.ts` file.
 
