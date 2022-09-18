@@ -1,11 +1,11 @@
-import { Header } from '../components/Header.tsx';
+import { Header } from "../components/Header.tsx";
 
 export function ServerCodePage(
   props: { serverCode: number; codeDescription: string },
 ) {
   return (
     <>
-    <Header/>
+      <Header />
       <section class="w-full flex items-center justify-center">
         <div class="text-center">
           <h1 class="text-6xl md:text-9xl font-extrabold">
@@ -26,8 +26,10 @@ export function ServerCodePage(
 }
 
 export default function PageNotFound() {
-  return ServerCodePage({
-    serverCode: 404,
-    codeDescription: "We couldn't find the page you're looking for.",
-  });
+  return (
+    <ServerCodePage
+      serverCode={404}
+      codeDescription={"We couldn't find the page you're looking for."}
+    />
+  );
 }
