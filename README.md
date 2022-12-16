@@ -7,7 +7,7 @@
   <a href="https://twitter.com/littlesticksdev">
   <img src="assets/twitter-badge.svg" alt="Follow Little Sticks on Twitter"/>
 </a>
-  <a href="https://littlesticks.lemonsqueezy.com/checkout?cart=8a271b06-d4c8-4a77-8bcc-7ef9c408309d">
+  <a href="https://littlesticks.lemonsqueezy.com/checkout/buy/ae636a97-0b45-4285-8250-41651a104b72">
     <img src="assets/sponsor-badge.svg" alt="Sponsor This Repo" />
   </a>
   <a href="https://littlesticks.dev/discord">
@@ -43,7 +43,7 @@ To add new posts, create a new markdown file in the `data/posts` directory.
 
 If you find this template useful, please consider donating to support the continued development of it with the link below
 
-[Donate to Fresh Blog](https://littlesticks.lemonsqueezy.com/checkout?cart=8a271b06-d4c8-4a77-8bcc-7ef9c408309d)
+[Donate to Fresh Blog](https://littlesticks.lemonsqueezy.com/checkout/buy/ae636a97-0b45-4285-8250-41651a104b72)
 
 ## Support
 
