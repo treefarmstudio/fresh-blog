@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/gh-banner.png" alt="Odyssey Theme Banner">
+  <img src="assets/gh-banner.png" alt="Fresh Blog Banner">
 </p>
 
 <br/>
