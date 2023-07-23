@@ -1,4 +1,4 @@
-import { extract } from "https://deno.land/std@0.145.0/encoding/front_matter.ts";
+import { extract } from "$std/front_matter/any.ts";
 
 export interface Post {
   slug: string;
