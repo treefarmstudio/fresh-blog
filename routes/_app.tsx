@@ -20,6 +20,7 @@ export default function App({ Component }: AppProps) {
         {/* Theme */}
         <meta name="theme-color" content="#000" />
         {/* Global Styles that couldn't be loaded through Twind */}
+        <link rel="stylesheet" href="/styles.css" />
         <style>
           {CSS}
         </style>
